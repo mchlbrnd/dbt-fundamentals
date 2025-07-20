@@ -1,4 +1,4 @@
 select
     id as customer_id,
     name,
-from jaffle_shop.customers
+from {{ source('jaffle_shop', 'customers') }}
